@@ -4,12 +4,14 @@
 ```
 <system.web>
   <customErrors mode="Off" />
-  <rules>
-    <add name="Application Events"
-         eventName="Application Lifetime Events"
-         provider="EventLogProvider"
-         profile="Default"
-         minInterval="00:01:00" />
-  </rules>
+  <healthMonitoring>
+    <rules>
+      <add name="Application Events"
+          eventName="Application Lifetime Events"
+          provider="EventLogProvider"
+          profile="Default"
+          minInterval="00:01:00" />
+    </rules>
+  </healthMonitoring>
 </system.web>
 ```
